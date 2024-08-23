@@ -1,10 +1,10 @@
-# Reclsx
+# React Clsx
 
 ---
 
-[![NPM version](https://badgen.net/npm/v/reclsx)](https://www.npmjs.com/package/reclsx)
-[![NPM Weekly Downloads](https://badgen.net/npm/dw/reclsx)](https://www.npmjs.com/package/reclsx)
-[![License](https://badgen.net/npm/license/reclsx)](https://www.npmjs.com/package/reclsx)
+[![NPM version](https://badgen.net/npm/v/react-clsx)](https://www.npmjs.com/package/react-clsx)
+[![NPM Weekly Downloads](https://badgen.net/npm/dw/react-clsx)](https://www.npmjs.com/package/react-clsx)
+[![License](https://badgen.net/npm/license/react-clsx)](https://www.npmjs.com/package/react-clsx)
 
 > Dynamically `classnames` in `React`<br>Based on [react/jsx-runtime](https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html)<br>Using [clsx](https://github.com/lukeed/clsx)
 
@@ -16,13 +16,13 @@
 
 ```bash
 # via pnpm
-$ pnpm i reclsx clsx
+$ pnpm i react-clsx clsx
 
 # via npm
-$ npm i reclsx clsx
+$ npm i react-clsx clsx
 
 # via yarn
-$ yarn add reclsx clsx
+$ yarn add react-clsx clsx
 ```
 
 ## Usage
@@ -45,16 +45,16 @@ The constructing `className` conditionally using [lukeed/clsx](https://github.co
 
 ## Configure
 
-Use Reclsx's jsx functions instead of the default jsx-runtime when compiling JSX.
+Use react-clsx's jsx functions instead of the default jsx-runtime when compiling JSX.
 
 ### TypeScript support(Optional)
 
-Make the Typescript compiler recognize Reclsx's className types in React.
+Make the Typescript compiler recognize react-clsx's className types in React.
 
 ```json
 {
   "compilerOptions": {
-    "jsxImportSource": "reclsx"
+    "jsxImportSource": "react-clsx"
   }
 }
 ```
@@ -70,7 +70,7 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [
     react({
-      jsxImportSource: "reclsx",
+      jsxImportSource: "react-clsx",
     }),
   ],
 });
@@ -88,7 +88,7 @@ Works with `Webpack` `Rollup` `Taro` etc.
       "@babel/preset-react",
       {
         "runtime": "automatic",
-        "importSource": "reclsx"
+        "importSource": "react-clsx"
       }
     ]
   ]
@@ -103,7 +103,7 @@ require("esbuild").buildSync({
   entryPoints: ["app.jsx"],
   bundle: true,
   jsxFactory: "jsx",
-  inject: ['./node_modules/reclsx/dist/jsx-runtime.js'],
+  inject: ['./node_modules/react-clsx/dist/jsx-runtime.js'],
   outfile: "out.js",
 });
 ```

@@ -6,7 +6,7 @@
 [![NPM Weekly Downloads](https://badgen.net/npm/dw/react-clsx)](https://www.npmjs.com/package/react-clsx)
 [![License](https://badgen.net/npm/license/react-clsx)](https://www.npmjs.com/package/react-clsx)
 
-> Dynamically `classnames` in `React`<br>Based on [react/jsx-runtime](https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html)<br>Using [clsx](https://github.com/lukeed/clsx)
+> Integrate `clsx` into `React`.<br>Based on [react/jsx-runtime](https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html)<br>Using [clsx](https://github.com/lukeed/clsx)
 
 ## Example
 
